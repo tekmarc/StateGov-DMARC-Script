@@ -76,7 +76,7 @@
     		# Fetch DMARC record for current domain
     		$dmarc = Resolve-DnsName -Type TXT -Name "_dmarc.$domain" -errorvariable err -erroraction silentlycontinue
     		
-    		# If-else statement based on DMARC policy data. 
+    	    # If-else statement based on DMARC policy data. 
             # (Note: For the p=none case, I intentionally designed this to catch both p=none, and sp=none, as both are near equivocal in the lack of policy enforcement on a domain.)
             # This waterfall if evaluation in terms of policy checking is used in this script to filter from least strict, to most strict. 
             # For the use of this script, it also removes the need for a more complex regex type match. 
