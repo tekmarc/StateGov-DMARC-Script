@@ -1,0 +1,147 @@
+State,Domain,DMARC
+Alabama,state.al.us,reject
+Alabama,alabama.gov,reject
+Alabama,al.gov,reject
+Alaska,state.ak.us,norecord
+Alaska,alaska.gov,norecord
+Alaska,ak.gov,norecord
+Arizona,state.az.us,norecord
+Arizona,arizona.gov,norecord
+Arizona,az.gov,norecord
+Arkansas,state.ar.us,none
+Arkansas,arkansas.gov,none
+Arkansas,ar.gov,none
+California,state.ca.us,norecord
+California,california.gov,norecord
+California,ca.gov,norecord
+Colorado,state.co.us,none
+Colorado,colorado.gov,none
+Colorado,co.gov,norecord
+Connecticut,ct.gov,none
+Connecticut,state.ct.us,norecord
+Delaware,state.de.us,none
+Delaware,delaware.gov,none
+Delaware,de.gov,norecord
+Florida,state.fl.us,norecord
+Florida,florida.gov,norecord
+Florida,fl.gov,norecord
+Georgia,state.ga.us,norecord
+Georgia,georgia.gov,norecord
+Georgia,ga.gov,norecord
+Hawaii,hawaii.gov,reject
+Hawaii,ehawaii.gov,none
+Hawaii,state.hi.us,norecord
+Hawaii,hi.gov,norecord
+Idaho,idaho.gov,none
+Idaho,id.gov,none
+Idaho,state.id.us,norecord
+Illinois,illinois.gov,none
+Illinois,state.il.us,norecord
+Illinois,il.gov,norecord
+Indiana,state.in.us,norecord
+Indiana,indiana.gov,norecord
+Indiana,in.gov,norecord
+Iowa,iowa.gov,none
+Iowa,state.ia.us,norecord
+Iowa,ia.gov,norecord
+Kansas,ks.gov,none
+Kansas,state.ks.us,norecord
+Kansas,kansas.gov,norecord
+Kentucky,ky.gov,none
+Kentucky,state.ky.us,norecord
+Kentucky,kentucky.gov,norecord
+Louisiana,la.gov,none
+Louisiana,state.la.us,norecord
+Louisiana,louisiana.gov,norecord
+Maine,maine.gov,none
+Maine,state.me.us,norecord
+Maine,me.gov,norecord
+Maryland,maryland.gov,none
+Maryland,md.gov,none
+Maryland,state.md.us,norecord
+Massachusetts,state.ma.us,none
+Massachusetts,mass.gov,none
+Massachusetts,ma.gov,norecord
+Massachusetts,massachusetts.gov,norecord
+Michigan,state.mi.us,none
+Michigan,michigan.gov,none
+Michigan,mi.gov,none
+Minnesota,state.mn.us,none
+Minnesota,mn.gov,none
+Minnesota,minnesota.gov,norecord
+Mississippi,state.ms.us,norecord
+Mississippi,mississippi.gov,norecord
+Mississippi,ms.gov,norecord
+Missouri,missouri.gov,reject
+Missouri,mo.gov,none
+Missouri,state.mo.us,norecord
+Montana,montana.gov,reject
+Montana,mt.gov,reject
+Montana,state.mt.us,norecord
+Nebraska,nebraska.gov,none
+Nebraska,state.ne.us,norecord
+Nebraska,ne.gov,norecord
+Nevada,state.nv.us,none
+Nevada,nv.gov,none
+Nevada,nevada.gov,norecord
+New Hampshire,state.nh.us,none
+New Hampshire,nh.gov,none
+New Hampshire,newhampshire.gov,norecord
+New Jersey,state.nj.us,reject
+New Jersey,nj.gov,reject
+New Jersey,newjersey.gov,norecord
+New Mexico,state.nm.us,none
+New Mexico,newmexico.gov,norecord
+New Mexico,nm.gov,norecord
+New York,state.ny.us,norecord
+New York,ny.gov,norecord
+North Carolina,state.nc.us,norecord
+North Carolina,northcarolina.gov,norecord
+North Carolina,nc.gov,norecord
+North Dakota,nd.gov,none
+North Dakota,state.nd.us,norecord
+North Dakota,northdakota.gov,norecord
+Ohio,state.oh.us,quarantine
+Ohio,ohio.gov,quarantine
+Ohio,oh.gov,none
+Oklahoma,ok.gov,none
+Oklahoma,state.ok.us,norecord
+Oklahoma,oklahoma.gov,norecord
+Oregon,state.or.us,none
+Oregon,oregon.gov,none
+Oregon,or.gov,norecord
+Pennsylvania,state.pa.us,none
+Pennsylvania,pa.gov,none
+Pennsylvania,pennsylvania.gov,norecord
+Rhode Island,ri.gov,none
+Rhode Island,state.ri.us,norecord
+Rhode Island,rhodeisland.gov,norecord
+South Carolina,state.sc.us,quarantine
+South Carolina,sc.gov,none
+South Carolina,southcarolina.gov,norecord
+South Dakota,state.sd.us,none
+South Dakota,sd.gov,none
+Tennessee,state.tn.us,reject
+Tennessee,tennessee.gov,none
+Tennessee,tn.gov,none
+Texas,texas.gov,none
+Texas,tx.gov,none
+Texas,state.tx.us,norecord
+Utah,utah.gov,none
+Utah,state.ut.us,norecord
+Vermont,vermont.gov,none
+Vermont,vt.gov,none
+Vermont,state.vt.us,norecord
+Virginia,state.va.us,norecord
+Virginia,virginia.gov,norecord
+Washington,wa.gov,none
+Washington,state.wa.us,norecord
+Washington,washington.gov,norecord
+West Virginia,wv.gov,reject
+West Virginia,state.wv.us,norecord
+Wisconsin,wisconsin.gov,none
+Wisconsin,wi.gov,none
+Wisconsin,state.wi.us,norecord
+Wyoming,state.wy.us,norecord
+Wyoming,wyoming.gov,norecord
+Wyoming,wy.gov,norecord
