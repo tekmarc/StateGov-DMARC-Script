@@ -59,7 +59,7 @@
     return $domains
     }
     
-    # set export variable headers
+    # Set export variable headers
     $expvar = @("State,Domain,DMARC")
     
     # Loop through states
@@ -77,10 +77,10 @@
     		$dmarc = Resolve-DnsName -Type TXT -Name "_dmarc.$domain" -errorvariable err -erroraction silentlycontinue
     		
     		# If-else statement based on DMARC policy data. 
-        # (Note: For the p=none case, I intentionally designed this to catch both p=none, and sp=none, as both are near equivocal in the lack of policy enforcement on a domain.)
-        # This waterfall if evaluation in terms of policy checking is used in this script to filter from least strict, to most strict. 
-        # For the use of this script, it also removes the need for a more complex regex type match. 
-        # If any less-strict policy exists, that will be the reflected policy for the domain.
+            # (Note: For the p=none case, I intentionally designed this to catch both p=none, and sp=none, as both are near equivocal in the lack of policy enforcement on a domain.)
+            # This waterfall if evaluation in terms of policy checking is used in this script to filter from least strict, to most strict. 
+            # For the use of this script, it also removes the need for a more complex regex type match. 
+            # If any less-strict policy exists, that will be the reflected policy for the domain.
       
     		if($dmarc -eq $null -or $dmarc.type -eq "SOA"){
     			write-host -foregroundcolor magenta $state - $domain - No DMARC record exists!
@@ -102,7 +102,7 @@
     }
     	
     	# Hacky workaround to get the object data into a CSV format. 
-      # Exports object data, re-imports using the import-csv method interpretation, and then finally exports as the final formatted CSV.
+        # Exports object data, re-imports using the import-csv method interpretation, and then finally exports as the final formatted CSV.
     	$expvar | Out-File $env:userprofile\desktop\tempcsv.csv
     	$tempvar = Import-Csv $env:userprofile\desktop\tempcsv.csv
     	$tempvar | Export-Csv $env:userprofile\desktop\stateDMARC.csv -NoTypeInformation
