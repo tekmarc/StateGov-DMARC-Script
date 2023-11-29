@@ -10,7 +10,7 @@ $StateDomains = $DotGovDomains | ?{$_."Domain Type" -eq "State" -and $_.State -n
 foreach($Row in $StateDomains){
 
 	$domain = $Row."Domain Name"
-    $dmarc = $null
+    	$dmarc = $null
 	
     # get DMARC record for domain
     $dmarc = Resolve-DnsName -Type TXT -Name "_dmarc.$domain" -errorvariable err -erroraction silentlycontinue
@@ -19,22 +19,22 @@ foreach($Row in $StateDomains){
     if($dmarc -eq $null -or $dmarc.type -eq "SOA"){
         write-host -foregroundcolor magenta $state - $domain - No DMARC record exists!
         
-		$Row."DMARC Policy" = "norecord"
+	$Row."DMARC Policy" = "norecord"
     }
     elseif($dmarc.strings -like "*p=none*"){
         write-host -foregroundcolor red $state - $domain - $dmarc.strings
         
-		$Row."DMARC Policy" = "none"
+	$Row."DMARC Policy" = "none"
     }
     elseif($dmarc.strings -like "*p=quarantine*"){
         write-host -foregroundcolor yellow $state - $domain - $dmarc.strings
         
-		$Row."DMARC Policy" = "quarantine"
+	$Row."DMARC Policy" = "quarantine"
     }
     elseif($dmarc.strings -like "*p=reject*"){
         write-host -foregroundcolor green $state - $domain - $dmarc.strings
         
-		$Row."DMARC Policy" = "reject"
+	$Row."DMARC Policy" = "reject"
     }
 	else{
 		write-host -foregroundcolor magenta $state - $domain - No DMARC record exists!
