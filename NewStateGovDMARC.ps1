@@ -1,4 +1,4 @@
-Invoke-WebRequest https://domains.dotgov.gov/dotgov-web/publicreports/current-full -OutFile $env:userprofile\desktop\DotGovAllDomains.csv
+Invoke-WebRequest https://raw.githubusercontent.com/cisagov/dotgov-data/main/current-full.csv -OutFile $env:userprofile\desktop\DotGovAllDomains.csv
 
 $DotGovDomains = import-csv $env:USERPROFILE\desktop\DotGovAllDomains.csv | Select-Object *,@{Name="DMARC Policy";Expression={""}}
 Remove-Item $env:USERPROFILE\desktop\DotGovAllDomains.csv
